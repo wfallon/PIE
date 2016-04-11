@@ -2,13 +2,14 @@
   "manifest_version": 2,
 
   "name": "P.I.E.",
-  "description": "Information at your fingerprints.",
+  "description":"Pingry Information and Essentials",
   "version": "1.0",
 
   "browser_action": {
-    "default_title": "PIE."
+    "default_title": "PIE"
   },
 
   "chrome_url_overrides" : {
     "newtab": "pie.html"
   }
+}
