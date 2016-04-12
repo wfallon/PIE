@@ -11,5 +11,10 @@
 
   "chrome_url_overrides" : {
     "newtab": "pie.html"
-  }
+  },
+  
+  "icons": { 
+  	"128": "PIE-128.png",
+     "48": "PIE-48.png",
+     "16": "PIE-16.png" }
 }
