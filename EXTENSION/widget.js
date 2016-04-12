@@ -28,6 +28,8 @@ $(document).ready(function(){
         m = addZero(today.getMinutes());
 		s = addZero(today.getSeconds());
 		document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+		var d = new Date();
+		document.getElementById("date").innerHTML = d.toDateString();
 		setTimeout(function(){ startTime(); }, 1000);
 	}
 	
