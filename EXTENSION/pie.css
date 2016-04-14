@@ -22,14 +22,6 @@ html, body {
 	-ms-user-select: none; /* IE10+ */
 }
 
-.pingry {
-	content: url("photos/pingry.png");
-	position: absolute;
-	left: 20px;
-	top: 20px;
-	height: 8%;
-	width: 15%;
-}
 .stage1 {
 	content: url("photos/white.png");
 	position: fixed;
@@ -44,18 +36,18 @@ html, body {
 .pingry {
 	content: url("photos/pingry.png");
 	position: absolute;
-	left: 20px;
-	top: 20px;
-	height: 8%;
-	width: 15%;
+	left: 10px;
+	top: 15px;
+	height: 7vw;
+	width: 7vw;
 	z-index: 3;
 }
 
 h1{
-	font-size: 60px;
-	text-align: center;
-	margin: auto;
-	margin-top: 7%;
+	font-size: 4vw;
+	position: fixed;
+	top: 5.8%;
+	left: 39%;
 }
 
 h2 {
@@ -77,10 +69,17 @@ h3 {
 }
 
 .twitter {
-	position: absolute;
-	width: 16vw;
-	height: 25vw;
-	margin-left: .5%;
+	position: fixed;
+	width: 15vw;
+	left: .5%;
+	bottom: -50%;
+	z-index: 3;
+}
+
+.twitter:hover{
+	position: fixed;
+	width: 15vw;
+	left: .5%;
 	top: 50%;
 	z-index: 3;
 }

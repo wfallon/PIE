@@ -5,3 +5,4 @@ $(document).ready(function(){
 
 	$(".stage1").fadeOut(2000);
 });
+
