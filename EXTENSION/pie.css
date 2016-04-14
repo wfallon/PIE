@@ -3,7 +3,11 @@ html, body {
     overflow: hidden;
     width: 100%;
     margin: 0%;
+<<<<<<< HEAD
     background-color: lightgrey;
+=======
+    height: 100%;
+>>>>>>> TwitterFeed-Branch
     background-repeat: no-repeat;
     -webkit-overflow-scrolling: touch; /* Chrome/Safari */
     
@@ -21,10 +25,30 @@ html, body {
 	text-align: center;
 	color: white; 
 	cursor: default;
-	text-shadow: 0px 0px 2px black;
+	/*text-shadow: 0px 0px 1px black;*/
 	-webkit-user-select: none; /* Chrome/Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
+}
+
+<<<<<<< HEAD
+.pingry {
+	content: url("photos/pingry.png");
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	height: 8%;
+	width: 15%;
+=======
+.stage1 {
+	content: url("photos/white.png");
+	position: relative;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+>>>>>>> TwitterFeed-Branch
 }
 
 .pingry {
@@ -34,23 +58,31 @@ html, body {
 	top: 20px;
 	height: 8%;
 	width: 15%;
-}
-
-h1 {
-	font-size: 60px;
-	text-align: center;
-	margin-top: 7%;
-	
+	z-index: 3;
 }
 
 h2 {
-	font-size: 250px;
+	font-size: 17vw;
 	text-align: center;
-	margin-top: -5%;
 	font-weight: normal;
+	position: fixed;
+	left: 30%;
+	top: -10%;
 }
 
 h3 {
-	position: relative;
-	bottom: 50px;
+	font-size: 3vw;
+	text-align: center;
+	font-weight: normal;
+	position: fixed;
+	left: 38%;
+	top: 42%;
+}
+
+.twitter {
+	position: fixed;
+	width: 16vw;
+	height: 25vw;
+	margin-left: .5%;
+	top: 2%;
 }
