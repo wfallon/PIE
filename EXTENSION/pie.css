@@ -14,32 +14,34 @@ html, body {
 	text-align: center;
 	color: white; 
 	cursor: default;
-	text-shadow: 0px 0px 2px black;
+	/*text-shadow: 0px 0px 2px black;*/
 	-webkit-user-select: none; /* Chrome/Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
 }
 
-
-h1 {
-	font-size: 60px;
-	text-align: center;
-	margin-top: 7%;
-	
-}
-
 h2 {
-	font-size: 250px;
+	font-size: 17vw;
 	text-align: center;
-	margin-top: -5%;
 	font-weight: normal;
+	position: fixed;
+	left: 34%;
+	top: -10%;
 }
 
 h3 {
-
+	font-size: 3vw;
+	text-align: center;
+	font-weight: normal;
+	position: fixed;
+	left: 38%;
+	top: 42%;
 }
 
 .twitter {
-	margin-top: -500px;
-	margin-left: 15px;
+	position: fixed;
+	width: 16vw;
+	height: 25vw;
+	margin-left: .5%;
+	top: 2%;
 }
