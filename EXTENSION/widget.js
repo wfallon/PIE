@@ -20,14 +20,14 @@ $(document).ready(function(){
 	*	Recursive method to keep time.
 	*/
 	function startTime() {
+		var half = true;
 		var today = new Date();
 		if (today.getHours() <= 12)
 			h = today.getHours();
 		else
 			h = today.getHours() - 12;
         m = addZero(today.getMinutes());
-		s = addZero(today.getSeconds());
-		document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+		document.getElementById('time').innerHTML = h + ":" + m;
 		var d = new Date();
 		document.getElementById("date").innerHTML = d.toDateString();
 		setTimeout(function(){ startTime(); }, 1000);

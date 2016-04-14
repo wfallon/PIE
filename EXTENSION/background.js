@@ -1,4 +1,4 @@
 $(document).ready(function(){
-reddit.hot('earthporn').limit(1).fetch(function(res) {
-	$(document.body).css("background-image", "url(" + res.data.children[0].data.url + ".jpg)");
-})});
+	$(document.body).css("background-image", "url('photos/Image" + (~~(Math.random() * 7) + 1) + ".jpg')");
+	$(document.body).css("background-size", "cover");
+});
