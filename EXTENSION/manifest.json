@@ -13,6 +13,8 @@
     "newtab": "pie.html"
   },
   
+  "content_security_policy": "script-src 'self' https://twitter.com https://platform.twitter.com https://cdn.api.twitter.com https://syndication.twimg.com; object-src 'self'",
+  
   "icons": { 
   	"128": "PIE-128.png",
      "48": "PIE-48.png",

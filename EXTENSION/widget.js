@@ -4,6 +4,7 @@
 *		Time
 *		Date
 *		Weather
+*		Twitter
 */
 
 $(document).ready(function(){
@@ -32,6 +33,22 @@ $(document).ready(function(){
 		document.getElementById("date").innerHTML = d.toDateString();
 		setTimeout(function(){ startTime(); }, 1000);
 	}
+	
+	rewrites = [
+	  [/chrome-extension:\/\/([a-z]+)\.twitter\.com/, 'https://$1.twitter.com'],
+	  [/chrome-extension:\/\/([a-z]+)\.twimg\.com/, 'https://$1.twimg.com']
+	];
+
+	document.addEventListener('beforeload', function(e){
+	  for (var i = 0, rule; rule = rewrites[i]; i++) {
+	    if (rule[0].test(e.url)) {
+	      e.preventDefault();
+	      e.stopPropagation();
+	      e.srcElement.src = e.srcElement.src.replace(rule[0], rule[1]);
+	      break;
+	    }
+	  }
+	}, true);
 	
 	startTime();
 	

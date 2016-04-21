@@ -15,6 +15,8 @@ html, body {
 	font-size: 30px;
 	text-align: center;
 	color: white; 
+	font-family: "Arial", Times, serif;
+	font-weight: bold;
 	cursor: default;
 	/*text-shadow: 0px 0px 1px black;*/
 	-webkit-user-select: none; /* Chrome/Safari */        
@@ -69,7 +71,7 @@ h3 {
 
 .twitter {
 	position: fixed;
-	width: 100px;
+	width: 80px;
 	height: 300px;
 	left: 10px;
 	bottom: -245px;
@@ -78,7 +80,7 @@ h3 {
 
 .twitter:hover{
 	position: fixed;
-	width: 300px;
+	width: 200px;
 	height: 300px;
 	left: 0px;
 	bottom: 0px;
