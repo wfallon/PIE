@@ -68,7 +68,7 @@ h3 {
 }
 
 .twitter {
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 300px;
 	left: 10px;
@@ -77,10 +77,10 @@ h3 {
 }
 
 .twitter:hover{
-	position: fixed;
-	width: 200px;
-	height: 300px;
+	position: absolute;
+	width: 10vw;
+	height: 20vw;
 	left: 0px;
-	bottom: 0px;
+	bottom: 50px;
 	z-index: 0;
 }
