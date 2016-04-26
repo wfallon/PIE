@@ -17,6 +17,11 @@ $(document).ready(function(){
 			return "0" + x;
 		return x;
 	}
+	
+	//helper arrays for the date
+	var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	
 	/*
 	*	Recursive method to keep time.
 	*/
@@ -27,30 +32,15 @@ $(document).ready(function(){
 			h = today.getHours();
 		else
 			h = today.getHours() - 12;
+		if (h == 0)
+			h = 12;
         m = addZero(today.getMinutes());
 		document.getElementById('time').innerHTML = h + ":" + m;
 		var d = new Date();
-		document.getElementById("date").innerHTML = d.toDateString();
+		document.getElementById("date").innerHTML = days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate();
 		setTimeout(function(){ startTime(); }, 1000);
 	}
 	
-	rewrites = [
-	  [/chrome-extension:\/\/([a-z]+)\.twitter\.com/, 'https://$1.twitter.com'],
-	  [/chrome-extension:\/\/([a-z]+)\.twimg\.com/, 'https://$1.twimg.com']
-	];
-
-	document.addEventListener('beforeload', function(e){
-	  for (var i = 0, rule; rule = rewrites[i]; i++) {
-	    if (rule[0].test(e.url)) {
-	      e.preventDefault();
-	      e.stopPropagation();
-	      e.srcElement.src = e.srcElement.src.replace(rule[0], rule[1]);
-	      break;
-	    }
-	  }
-	}, true);
-	
 	startTime();
-	
 	
 });
