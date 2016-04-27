@@ -16,7 +16,6 @@ html, body {
 	text-align: center;
 	color: white; 
 	font-family: "Arial", Times, serif;
-	font-weight: bold;
 	cursor: default;
 	-webkit-user-select: none; /* Chrome/Safari */
 }
@@ -67,6 +66,31 @@ h3 {
 	margin: auto;
 }
 
+h4 {
+	font-size: 4.5vw;
+	font-family: Driod Sans Mono;
+	color: #f2f2f2;
+	font-weight: normal;
+	text-align: center;
+	position: absolute;
+	top: -5.5vw;
+	right: 2.6vw;
+	z-index: 3;
+}
+
+h5 {
+	font-size: 1.5vw;
+	font-family: Driod Sans Mono;
+	color: #f2f2f2;
+	text-align: center;
+	font-weight: normal;
+	position: absolute;
+	top: 2.6vw;
+	right: 2vw;
+	z-index: 3;
+}
+
+
 .twitter {
 	position: absolute;
 	width: 80px;
@@ -78,9 +102,9 @@ h3 {
 
 .twitter:hover{
 	position: absolute;
-	width: 10vw;
+	width: 15vw;
 	height: 20vw;
-	left: 0px;
+	left: 10px;
 	bottom: 50px;
 	z-index: 0;
 }
