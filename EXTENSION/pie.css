@@ -69,9 +69,7 @@ h3 {
 h4 {
 	font-size: 4.5vw;
 	font-family: Driod Sans Mono;
-	color: #f2f2f2;
 	font-weight: normal;
-	text-align: center;
 	position: absolute;
 	top: -5.5vw;
 	right: 2.6vw;
@@ -81,8 +79,6 @@ h4 {
 h5 {
 	font-size: 1.5vw;
 	font-family: Driod Sans Mono;
-	color: #f2f2f2;
-	text-align: center;
 	font-weight: normal;
 	position: absolute;
 	top: 2.6vw;

@@ -43,6 +43,10 @@ $(document).ready(function(){
 	}
 	
 	startTime();
+	
+	/*
+	*	Gets the letter day using the unique int for each calendar day
+	*/
 	function letterDay(){
 
 	var times = [["A", 16918, 16927], ["B", 16919], ["C", 16920], ["D", 16923], ["E", 16924], ["F", 16925], ["G", 16917, 16926]];
@@ -57,9 +61,9 @@ $(document).ready(function(){
 
 	var day = ""
 
-	for(i=0; i <times.length; i++)
+	for(i = 0; i < times.length; i++)
 	{
-		for(v = 0; v<times[i].length - 1; v++)
+		for(v = 0; v < times[i].length - 1; v++)
 		{
 			if(times[i][v+1] == currentTime)
 			{
