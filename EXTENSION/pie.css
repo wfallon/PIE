@@ -27,7 +27,7 @@ html, body {
 	top: 0px;
 	height: 100%;
 	width: 100%;
-	z-index: 6;
+	z-index: 7;
 
 }
 
@@ -106,7 +106,7 @@ h5 {
 	height: 300px;
 	left: 10px;
 	bottom: -245px;
-	z-index: 0;
+	z-index: 6;
 }
 
 .twitter:hover{
@@ -115,15 +115,37 @@ h5 {
 	height: 23vw;
 	left: 10px;
 	bottom: 50px;
-	z-index: 0;
+	z-index: 6;
+}
+
+.loading {
+	content: url("photos/loading.png");
+	position: absolute;
+	width: 180px;
+	height: 55px;
+	left: 10px;
+	bottom: 0px;
+	z-index: 4;
+}
+
+.error {
+	content: url("photos/error.png");
+	position: absolute;
+	opacity: 1;
+	width: 35px;
+	height: 35px;
+	left: 140px;
+	bottom: 10px;
+	z-index: 4;
 }
 
 iframe {
 	position: absolute;
-	right: -40vw;
-	bottom: -40vw;
+	right: -60vw;
+	bottom: -60vw;
 	height: 53.33vw;
 	width: 40vw;
+	min-width: 240px;
 	-webkit-border-radius: 12px;
 	border-radius: 12px;
 	z-index: 4;
