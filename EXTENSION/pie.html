@@ -17,7 +17,16 @@
 	<div class='init'>
 		<img class="pingry"/>
 		<img id="lunch" class="lunch"/>
-		<iframe id="iframe" src="http://www.sagedining.com/menus/pingry" name="iframe" style="-webkit-transform:scale(0.75);"></iframe>
+		<div id="anchor">
+			<div id="child">
+				<svg height="90" width="90">
+					<a href="https://www.pingry.org" class="circle">
+  						<circle id="circle" cx="3.5vw" cy="3.5vw" r="3.5vw" stroke="black" stroke-width="1" fill="red" />
+					</a>
+				</svg>
+			</div>
+		</div>
+		<iframe id="iframe" src="http://www.sagedining.com/menus/pingry" name="iframe" style="-webkit-transform:scale(0.75); transform-origin: 0 0;"></iframe>
 		<h1>
 			<div class="greeting"></div>
 		</h1>
